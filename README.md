@@ -71,14 +71,22 @@ Processed data is sent to Node-RED, stored in InfluxDB, and visualized in Grafan
 
 Create Grafana panels for:
 
-1. Gas Average (Time Series)
-2. Risk Level Display
-3. Body Temperature Gauge
-4. Pressure Graph
-5. Altitude Graph
-6. Pressure (hPa) from BMP280
-7. Altitude (meters)
-8. DS3231 timestamp
+1. ![Gas Average (Time Series)](note-red%20data.png)
+
+2. ![Risk Level Display](note-red%20data.png)
+
+3. ![Body Temperature Gauge](note-red%20data.png)
+
+4. ![Pressure Graph](note-red%20data.png)
+
+5. ![Altitude Graph](note-red%20data.png)
+
+6. ![Pressure (hPa) from BMP280](note-red%20data.png)
+
+7. ![Altitude (meters)](note-red%20data.png)
+
+8. ![DS3231 timestamp](note-red%20data.png)
+
 
 **Evidence:** Screenshot of complete Grafana dashboard.
 [Watch Project Demonstration](https://youtube.com/shorts/0n-_p600KQ4?si=rU7hHUkn8I-MIfE5)
