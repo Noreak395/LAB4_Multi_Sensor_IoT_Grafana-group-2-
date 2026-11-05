@@ -69,23 +69,35 @@ Processed data is sent to Node-RED, stored in InfluxDB, and visualized in Grafan
 
 #### Task 4 - Pressure & Altitude Monitoring (Grafana)
 
-Create Grafana panels for:
+## Grafana Dashboard Panels
 
-1. ![Gas Average (Time Series)](note-red%20data.png)
+### 1. Gas Average (Time Series)
+![Gas Average](<Grafana-Gas Average (Time Series).png>)
 
-2. ![Risk Level Display](note-red%20data.png)
+### 2. Risk Level Display
+![Risk Level Display](<Grafana-Risk Level Display.png>)
 
-3. ![Body Temperature Gauge](note-red%20data.png)
+### 3. Body Temperature Gauge
+![Body Temperature Gauge](<Grafana-Body Temperature Gauge.png>)
 
-4. ![Pressure Graph](note-red%20data.png)
+### 4. Pressure Graph
+![Pressure Graph](<Grafana-Pressure Graph.png>)
 
-5. ![Altitude Graph](note-red%20data.png)
+### 5. Altitude Graph
+![Altitude Graph](<Grafana-Altitude Graph.png>)
 
-6. ![Pressure (hPa) from BMP280](note-red%20data.png)
+### 6. Pressure (hPa) from BMP280
+![Pressure BMP280](<Grafana-Pressure (hPa) from BMP280.png>)
 
-7. ![Altitude (meters)](note-red%20data.png)
+### 7. Altitude (meters)
+![Altitude](<Grafana-Altitude (meters).png>)
 
-8. ![DS3231 timestamp](note-red%20data.png)
+### 8. DS3231 Timestamp
+![DS3231 Timestamp](<Grafana-DS3231 timestamp.png>)
+
+
+   Grafana Dashboard 
+   ![Grafana Dashboard](Grafana-Dashboard.png)
 
 
 **Evidence:** Screenshot of complete Grafana dashboard.
