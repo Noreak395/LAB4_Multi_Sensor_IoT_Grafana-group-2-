@@ -4,7 +4,6 @@
 
 ### 1. Overview
 In this lab, students will design and implement a multi-sensor IoT monitoring system using ESP32 and MicroPython (Thonny). The system integrates MLX90614 (body temperature), MQ-5 (gas sensor), BMP280 (room temperature, pressure, altitude), and DS3231 (RTC).
-
 Students must implement edge logic processing before sending data to Node-RED, where it will be stored in InfluxDB and visualized in Grafana.
 
 ### 2. Learning Outcomes (CLO Alignment)
@@ -22,6 +21,8 @@ Students must implement edge logic processing before sending data to Node-RED, w
 - BMP280
 - DS3231 RTC
 - Breadboard and jumper wires
+  
+  ![Task 1 - Gas Filtering](setup.jpg)
 
 ### 4. System Description
 The ESP32 continuously reads sensor data from all modules. Before sending data to Node-RED:
@@ -54,6 +55,7 @@ Processed data is sent to Node-RED, stored in InfluxDB, and visualized in Grafan
 - Send `risk_level` with data packet.
 
 **Evidence:** Screenshot demonstrating different risk states.
+![Task 2 - Gas Risk Classification](thonnydata.png)
 
 #### Task 3 - Fever Detection Logic
 - If `body_temp >= 32.5°C` → `fever_flag = 1`
