@@ -81,6 +81,7 @@ Create Grafana panels for:
 8. DS3231 timestamp
 
 **Evidence:** Screenshot of complete Grafana dashboard.
+[Watch Project Demonstration](https://youtube.com/shorts/0n-_p600KQ4?si=rU7hHUkn8I-MIfE5)
 
 ### 6. Submission & Academic Integrity
 
