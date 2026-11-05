@@ -55,7 +55,6 @@ Processed data is sent to Node-RED, stored in InfluxDB, and visualized in Grafan
 - Send `risk_level` with data packet.
 
 **Evidence:** Screenshot demonstrating different risk states.
-![Task 2 - Gas Risk Classification](thonnydata.png)
 
 #### Task 3 - Fever Detection Logic
 - If `body_temp >= 32.5°C` → `fever_flag = 1`
@@ -63,6 +62,8 @@ Processed data is sent to Node-RED, stored in InfluxDB, and visualized in Grafan
 - Send `fever_flag` to Node-RED.
 
 **Evidence:** Demonstration of fever detection logic.
+
+![Task 1, 2, 3 combined](thonny%20data.png)
 
 #### Task 4 - Pressure & Altitude Monitoring (Grafana)
 
