@@ -1,0 +1,23 @@
+[
+    {
+        "id": "ecae39c7f4c2b194",
+        "type": "function",
+        "z": "8a66f117481b1a4f",
+        "name": "Format Sensor Data",
+        "func": "\nlet data = msg.payload;\n\n// Convert JSON string into an object if necessary\nif (typeof data === \"string\") {\n    data = JSON.parse(data);\n}\n\n// Handle nested payload if present\nif (data && data.payload) {\n    data = data.payload;\n}\n\n// Show the actual incoming structure\nnode.warn(\"Received keys: \" + Object.keys(data || {}).join(\", \"));\n\nif (!data || data.raw_value === undefined) {\n    node.error(\"raw_value is missing from incoming data\", msg);\n    return null;\n}\n\nmsg.measurement = \"sensor_data\";\n\nmsg.payload = {\n    raw_value: Number(data.raw_value),\n    moving_average: Number(data.moving_average),\n    body_temperature: Number(data.body_temperature),\n    fever_flag: Number(data.fever_flag),\n    room_temperature: Number(data.room_temperature),\n    pressure: Number(data.pressure),\n    altitude: Number(data.altitude),\n    risk_level: String(data.risk_level)\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "9dde032de2f68d53",
+                "cfef58ade0801322"
+            ]
+        ]
+    }
+]
